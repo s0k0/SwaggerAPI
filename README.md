@@ -1,5 +1,5 @@
-# SwaggerAPI: Skeleton project
-Tutorial to learn how to use swagger API framework
+# SwaggerAPI: Todo Application Server
+Tutorial app to learn how to use swagger API framework https://swagger.io/
 
 ### How to start
 
