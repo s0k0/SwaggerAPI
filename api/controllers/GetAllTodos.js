@@ -5,9 +5,8 @@ var client = require('../helpers/es');
 module.exports = {
     GetAllTodos: GetAllTodos
 };
-
+//fetching data from the elasticsearch service
 function GetAllTodos(req, res){
-
     client.search({
        index: 'todo',
        type: 'todo',

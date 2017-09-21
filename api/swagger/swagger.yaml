@@ -45,7 +45,12 @@ paths:
           $ref: "#/definitions/Todo"
       responses:
         200:
-          description: "Succesful Todo add"
+          description: Success
+          schema:
+            title: reset
+            properties:
+              message:
+                type: string
       x-swagger-router-controller: "AddTodo"
   /todo/{id}:
     get:

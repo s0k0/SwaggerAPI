@@ -1,5 +1,6 @@
 'use strict';
 
+
 module.exports = {
     GetAllTodos: GetAllTodos
 };
@@ -22,4 +23,5 @@ function GetAllTodos(req, res, next){
             completed: false
         }
     ]);
+
 }
