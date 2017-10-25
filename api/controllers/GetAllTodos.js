@@ -16,7 +16,10 @@ function GetAllTodos(req, res){
         if(error){
             res.end(JSON.stringify(error));
         }else{
-            res.json(response);
+            var results = [];
+            results = response.hits.hits.map(function(hit){return hit._source});
+            res.header('Content-Type','application/json');
+            res.end(JSON.stringify(results));
         }
     });
 

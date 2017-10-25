@@ -24,7 +24,6 @@ function AddTodo(req, res){
         }else{
             req.swagger.params.todo.value.datecreated = new Date();
             console.log(`Todo ${req.swagger.params.todo.value.todo_id} added to Elasticsearch`);
-            res.writeHead(code, message);
             res.end();
         }
     });
